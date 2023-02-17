@@ -1,5 +1,12 @@
 #!/bin/bash
 echo
+echo 'Updating test scripts'
+cd /home/jhu/test/scripts
+git reset --hard HEAD
+git pull origin main
+cp ./Desktop/* ~/Desktop
+cp ./test/* /home/jhu/test
+cd /home/jhu/test
 echo 'Updating dRAC test software'
 ./update-dractest.sh
 echo 'Calling git to update from repository'
