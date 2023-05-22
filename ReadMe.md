@@ -10,12 +10,7 @@ build tools are already installed on the computer):
 5. Change to the test directory: `cd /home/jhu/test`
 6. Clone this repository into a `scripts` subdirectory:  `git clone https://github.com/jhu-dvrk/dvrk-mfg-test.git scripts`
 7. Run the provided `setup` script:  `sh scripts/setup.sh`
-8. This should create 5 icons on the Desktop, with extension `.desktop`. Right click on each and select the `Allow Launching` option
-
-Some of the testing requires a terminal emulator, such as PuTTY. To install and set up PuTTY:
-
-1. Install putty if needed: `sudo apt install putty`
-2. Choose the `Serial` connection type and set `Speed` to 115200
+8. This should create 5 icons on the Desktop, with extension `.desktop`. Right click on each and select the `Allow Launching` option. Note: It may be necessary to log out and then log in again to be able to select `Allow Launching` for some of the icons.
 
 The five test icons are:
 
@@ -24,3 +19,8 @@ The five test icons are:
 * **DQLA2**: tests QLA #2 in a DQLA system
 * **dRAC Test**: GUI program that tests dRAC
 * **JHU SW Update**: updates the test software
+
+Some of the testing requires a terminal emulator, such as PuTTY. To install and set up PuTTY:
+
+1. Install putty if needed: `sudo apt install putty`
+2. Choose the `Serial` connection type and set `Speed` to 115200
