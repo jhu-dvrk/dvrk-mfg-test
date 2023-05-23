@@ -1,16 +1,14 @@
 This repository contains script files to set up a Linux computer to test the custom electronics boards
-used by the da Vinci Research Kit (dVRK). It has been tested with Ubuntu 20.04.
+used by the da Vinci Research Kit (dVRK). It has been tested with Ubuntu 20.04 and 22.04.
 Presently, many paths are hard-coded, so the initial setup should be as follows (this assumes that all
 build tools are already installed on the computer):
 
 1. Create an account named `jhu`, which will have a home directory `/home/jhu`
-2. Set git email address: `git config --global user.email "you@example.com"`
-3. Set git user name: `git config --global user.name "Your Name"`
-4. Create a directory called `test`: `mkdir /home/jhu/test`
-5. Change to the test directory: `cd /home/jhu/test`
-6. Clone this repository into a `scripts` subdirectory:  `git clone https://github.com/jhu-dvrk/dvrk-mfg-test.git scripts`
-7. Run the provided `setup` script:  `sh scripts/setup.sh`
-8. This should create 5 icons on the Desktop, with extension `.desktop`. Right click on each and select the `Allow Launching` option. Note: It may be necessary to log out and then log in again to be able to select `Allow Launching` for some of the icons.
+2. Create a directory called `test`: `mkdir /home/jhu/test`
+3. Change to the test directory: `cd /home/jhu/test`
+4. Clone this repository into a `scripts` subdirectory:  `git clone https://github.com/jhu-dvrk/dvrk-mfg-test.git scripts`
+5. Run the provided `setup` script:  `sh scripts/setup.sh`
+6. This should create 5 icons on the Desktop, which are described below; it also creates a `QLA_test_results` folder for the QLA test log files
 
 The five test icons are:
 
