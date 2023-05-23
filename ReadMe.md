@@ -23,4 +23,7 @@ The five test icons are:
 Some of the testing requires a terminal emulator, such as PuTTY. To install and set up PuTTY:
 
 1. Install putty if needed: `sudo apt install putty`
-2. Choose the `Serial` connection type and set `Speed` to 115200
+2. Add `jhu` to the `dialout` group:  `sudo usermod -a -G dialout jhu`
+3. Reboot the computer
+4. Start PuTTy, choose the `Serial` connection type, `\dev\ttyUSB0`, and set `Speed` to 115200
+5. (Optional) Improve appearance by increasing window size (e.g., to 128 x 46) and changing font to `Ubuntu Mono`; note that session settings can be saved
