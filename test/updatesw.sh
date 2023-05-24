@@ -1,12 +1,11 @@
 #!/bin/bash
 echo
 echo 'Updating test scripts'
-cd /home/jhu/test/scripts
+cd ~/test/scripts
 git reset --hard HEAD
 git pull origin main
-cp ./Desktop/* ~/Desktop
-cp ./test/* /home/jhu/test
-cd /home/jhu/test
+cp ./test/* ~/test
+cd ~/test
 echo 'Updating dRAC test software'
 ./update-dractest.sh
 echo 'Calling git to update from repository'
@@ -20,5 +19,5 @@ if [ $retVal -ne 0 ]; then
     echo "Compiler error"
 fi
 cd ..
+sh update-desktop.sh
 exec $SHELL
-

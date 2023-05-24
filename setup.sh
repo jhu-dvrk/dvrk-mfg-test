@@ -24,12 +24,5 @@ cd ..
 echo 'Getting dRAC test software'
 sh update-dractest.sh
 
-echo 'Setting up Desktop'
-mkdir -p /home/jhu/Desktop/QLA_test_results
-cp scripts/Desktop/* ~/Desktop
-gio set ~/Desktop/conntest.desktop  metadata::trusted true
-gio set ~/Desktop/dqlatest1.desktop metadata::trusted true
-gio set ~/Desktop/dqlatest2.desktop metadata::trusted true
-gio set ~/Desktop/dractest.desktop  metadata::trusted true
-gio set ~/Desktop/swupdate.desktop  metadata::trusted true
-chmod a+x ~/Desktop/*.desktop
+mkdir -p ~/Desktop/QLA_test_results
+sh update-desktop.sh

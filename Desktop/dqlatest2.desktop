@@ -13,13 +13,13 @@ Name=DQLA 2
 Comment=DQLA Test for QLA 2
 
 # The path to the folder in which the executable is run
-Path=/home/jhu/Desktop/QLA_test_results
+Path=~/Desktop/QLA_test_results
 
 # The executable of the application, possibly with arguments.
-Exec=/home/jhu/test/ubuntu/bin/qlatest -q2
+Exec=~/test/ubuntu/bin/qlatest -q2
 
 # The name of the icon that will be used to display this entry
-Icon=/home/jhu/test/dqla.png
+Icon=~/test/dqla.png
 
 # Describes whether this application needs to be run in a terminal or not
 Terminal=true

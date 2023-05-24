@@ -13,13 +13,13 @@ Name=FPGA Connection Test
 Comment=FireWire/Ethernet Connection Test
 
 # The path to the folder in which the executable is run
-Path=/home/jhu/test/
+Path=~/test/
 
 # The executable of the application, possibly with arguments.
-Exec=sh /home/jhu/test/conntest.sh
+Exec=sh ~/test/conntest.sh
 
 # The name of the icon that will be used to display this entry
-Icon=/home/jhu/test/fpgav3.png
+Icon=~/test/fpgav3.png
 
 # Describes whether this application needs to be run in a terminal or not
 Terminal=true
