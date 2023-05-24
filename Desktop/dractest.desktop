@@ -13,13 +13,13 @@ Name=dRAC Test
 Comment=Test program for dRAC board
 
 # The path to the folder in which the executable is run
-Path=~/Desktop
+Path=/home/jhu/Desktop
 
 # The executable of the application, possibly with arguments.
-Exec=~/test/dractest.AppImage
+Exec=/home/jhu/test/dractest.AppImage
 
 # The name of the icon that will be used to display this entry
-Icon=~/test/dractest.png
+Icon=/home/jhu/test/dractest.png
 
 # Describes whether this application needs to be run in a terminal or not
 Terminal=false

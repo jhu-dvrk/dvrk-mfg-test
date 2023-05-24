@@ -13,13 +13,13 @@ Name=JHU SW Update
 Comment=Update JHU test software
 
 # The path to the folder in which the executable is run
-Path=~/test/
+Path=/home/jhu/test/
 
 # The executable of the application, possibly with arguments.
-Exec=sh ~/test/updatesw.sh
+Exec=sh /home/jhu/test/updatesw.sh
 
 # The name of the icon that will be used to display this entry
-Icon=~/test/jhu.png
+Icon=/home/jhu/test/jhu.png
 
 # Describes whether this application needs to be run in a terminal or not
 Terminal=true
