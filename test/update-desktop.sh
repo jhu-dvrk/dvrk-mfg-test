@@ -6,10 +6,12 @@ sed "s|/home/jhu|${HOME}|g" scripts/Desktop/conntest.desktop  > ~/Desktop/connte
 sed "s|/home/jhu|${HOME}|g" scripts/Desktop/dqlatest1.desktop > ~/Desktop/dqlatest1.desktop
 sed "s|/home/jhu|${HOME}|g" scripts/Desktop/dqlatest2.desktop > ~/Desktop/dqlatest2.desktop
 sed "s|/home/jhu|${HOME}|g" scripts/Desktop/dractest.desktop  > ~/Desktop/dractest.desktop
+sed "s|/home/jhu|${HOME}|g" scripts/Desktop/dractest.desktop  > ~/Desktop/dvrktest.desktop
 sed "s|/home/jhu|${HOME}|g" scripts/Desktop/swupdate.desktop  > ~/Desktop/swupdate.desktop
 gio set ~/Desktop/conntest.desktop  metadata::trusted true
 gio set ~/Desktop/dqlatest1.desktop metadata::trusted true
 gio set ~/Desktop/dqlatest2.desktop metadata::trusted true
 gio set ~/Desktop/dractest.desktop  metadata::trusted true
+gio set ~/Desktop/dvrktest.desktop  metadata::trusted true
 gio set ~/Desktop/swupdate.desktop  metadata::trusted true
 chmod a+x ~/Desktop/*.desktop
