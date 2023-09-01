@@ -6,8 +6,10 @@ git reset --hard HEAD
 git pull origin main
 cp ./test/* ~/test
 cd ~/test
-echo 'Updating dRAC test software'
-./update-dractest.sh
+if [ -e ~/test/pcb.cfg ]
+    echo 'Updating dRAC test software'
+    ./update-dractest.sh
+fi
 echo 'Calling git to update from repository'
 cd source
 git pull origin mfg-test
