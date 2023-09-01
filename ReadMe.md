@@ -11,7 +11,7 @@ which are selected by command line parameters to the `setup.sh` script:
 
 The initial setup should be as follows:
 
-1. Install the following packages (if not already installed): `sudo apt install build-essential libraw1394-dev libncurses5-dev cmake-curses-gui cmake-qt-gui git libfuse`
+1. Install the following packages (if not already installed): `sudo apt install build-essential libraw1394-dev libncurses5-dev cmake-curses-gui cmake-qt-gui git libfuse-dev`
 2. Set permissions on FireWire device, using the "convenient solution" described [here](https://github.com/jhu-dvrk/sawIntuitiveResearchKit/wiki/ControllerConnection#convenient-solution).
 3. Create a subdirectory called `test` (must be in home directory): `mkdir ~/test`
 4. Change to the test directory: `cd ~/test`
@@ -32,6 +32,8 @@ The `pcb` configuration also creates the following icons:
 
 The `box` configuration also creates the following icon:
 * **Classic Controller Test**: tests classic dVRK controller box
+
+Note: `setup.sh` also accepts an `all` parameter, which is equivalent to both `pcb` and `box`.
 
 ## Setting up Terminal Emulator
 
