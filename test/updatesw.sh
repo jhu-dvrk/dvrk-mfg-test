@@ -7,6 +7,7 @@ git pull origin main
 cp ./test/* ~/test
 cd ~/test
 if [ -e ~/test/pcb.cfg ]
+then
     echo 'Updating dRAC test software'
     ./update-dractest.sh
 fi
